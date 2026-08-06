@@ -92,6 +92,11 @@ LAYOUT TIP:
 
 Please keep into accountability that this is a project in process, I yet do not have any code, Although with this current list, I will adapt and slowly build the code to be able to have a finished code.
 
+# Diagram/Shematic
+
+<img width="1470" height="956" alt="Screenshot 2026-08-05 at 11 11 17 PM" src="https://github.com/user-attachments/assets/f7d713ca-cb09-4a4e-af11-4cd36690e81e" />
+
+
 
 # Links 
 
