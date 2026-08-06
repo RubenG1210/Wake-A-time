@@ -88,6 +88,10 @@ BUTTONS (switch to ground, INPUT_PULLUP in software):
 LAYOUT TIP:
 - Run one continuous perfboard/breadboard strip each for 3V3, GND, SDA, SCL along the board length
 
+# Code
+
+Please keep into accountability that this is a project in process, I yet do not have any code, Although with this current list, I will adapt and slowly build the code to be able to have a finished code.
+
 # Links 
 
 [XIAO](https://www.amazon.com/gp/product/B0B94JZ2YF/ref=ox_sc_act_title_8?smid=A1YP59NGBNBZUR&th=1)
@@ -105,4 +109,6 @@ LAYOUT TIP:
 [DS3231 RTC](https://www.amazon.com/gp/product/B09KPC8JZQ/ref=ox_sc_act_title_2?smid=A2Z10KY0342329&th=1)
 
 [4.7K Ω Resistor](https://www.amazon.com/gp/product/B0BR8MYNNC/ref=ox_sc_act_title_1?smid=A2XLLJ8HYD6SMA&th=1)
+
+
 
