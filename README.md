@@ -7,3 +7,35 @@ Thats when I decided I need to make a project that can help me with this problem
 One day, I woke up correctly on time, Not because of hearing the alarm, a internal clock, but because the alarm I had on my phone was creating haptic buzzing, since my phone was near me I was directly feeling the buzzing patterns, which slowly drew me out of sleep.
 
 Thats how I knew what I had to build, that I had to replicate that same feeling, that same buzzing, that same feeling of peacefullness upon awakening.
+
+# Usability
+
+How would Wake-A-Time be used? Since making a wearable from complete scratch is a very hard and long process, I will take inspiration from other brands and build upon then. Thus, Wake-A-Time will be a wrist wearable. 
+
+# MCU(Microcontroller Unit)
+
+I wanted to choose a MCU Module, first I had to of course take the Original ESP32 Dev in accountability, but it would simple be too large for a Wrist. Then the ESP32 Supermini C3 came in mind, And I was about to choose it, Until I saw a simple ad for a XIAO ESP32 C3, At first I thought that the differences were low to none. Until upon further research the XIAO has a built in LIPO charger, which could save me both money and space. Final Decision is the XIAO.
+
+# Modules 
+
+As a first iteration of this, I will first begin testing on a breadboard before switching to a Perfboard, and as a final product, a PCB, but until then, I will use Modules. 
+
+Before choosing any modules, you have to understand what you need, for this, it'll be simple, I need a Wrist Worn product that has accurate time, haptic feedback, and a screen to display wake up time or to change the settings.
+
+Here's what I came up with. 
+
+For accurate time, a RTC module is crucial, the most accurate time, with little to no drift would be the DS3231, lets leave this at the chip for now, Just remember that the RTC module needs the DS3231 chip.
+
+For Haptic Feedback, We first need of course our vibration motors, although more importantly, the Haptic Driver, The most smallest, efficient and reliable driver that I could find is the DRV2605L, Restated, remember this chip.
+
+Lastly for the Screen, I dont need anything complex, large, or colorful, but efficient and small, that's when the classic 0.96 inch SSD1306 OLED comes. 
+
+
+Lets take a break, This project isn't just hardware and code, But it has to involve psychology and Humane Behavior due to the UI and how the haptic driver wakes you up. Since simply making a hard buzzing noise would instantly annoy the user and wouldn't be any different from a traditional alarm clock. Thus I will build upon large apps, such as slowly building up, using small haptic touches, that slowly become more faster and sharper, to draw the user outside of sleep. The UI, the UI is one of the most important parts of this, people simply wouldn't use it if the UI is too boring or complicated. Plus large social media companies, including games have a way to hook you, to getting yourself addicted by creating "Streaks" or "daily rewards"
+
+After deeper thought, for example losing a 50 day streak due to not waking up or being sick or such, would create instead of joy, or a sense of pride, it would create a sense of distraught or in general sadness. To combat this, I will implement a different type of streak, but it'll be called "Days of the month" that goes 1/30 and so on, Also if a user doesn't wake up on time, the streak simply doesn't move, thus encouraging the user to keep going.
+
+You may ask how do we know the user has woken up for the streaks, going back to the UI, you will have to input a 4 PIN number via tactile buttons. Why? Why instead of a simple snooze you may ask? I researched how the brain first wakes up, using RAS, which acts as a switch, RAS may be activated via Noise, Light and touch. Then your frontal cortex is in charge of gaining consciousness. 
+
+This system is designed for your body to first wake up, logical coordinated movements(Entering the passcode) while also using you brain for memory recallation, lastly the constant buzzing makes your Brain want to stop the timer, all of this helps full awakening and when the passcode is inputted the streak goes up, a simple, yet effective method.
+
