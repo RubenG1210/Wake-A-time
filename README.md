@@ -39,3 +39,70 @@ You may ask how do we know the user has woken up for the streaks, going back to 
 
 This system is designed for your body to first wake up, logical coordinated movements(Entering the passcode) while also using you brain for memory recallation, lastly the constant buzzing makes your Brain want to stop the timer, all of this helps full awakening and when the passcode is inputted the streak goes up, a simple, yet effective method.
 
+This brings up back to the BOM 
+
+# BOM(Build Of Materials)
+## Links will be at the bottom
+
+- Seeed Studio XIAO ESP32C3
+
+- Haptic Motor Driver
+
+- Mini Vibration Motors
+
+- 0.96 Inch OLED Display
+
+- 200mAh LIPO
+
+- Electrical Male and Female Connector Plug (These are to make the Battery a plug and play system, and easily replaceable)
+
+- DS3231 Real Time Clock
+
+- 4.7K Ω Resistor
+
+- 3 Tactile Buttons, (I already have these)
+
+# Total Cost x Shipping x Taxes = $80-90 depending on price fluctuations and shipping.
+
+# Wiring 
+
+I2C BUS (shared SDA/SCL rows):
+- XIAO D4 -> SDA bus row
+- XIAO D5 -> SCL bus row
+- DS3231 SDA -> SDA bus row
+- DS3231 SCL -> SCL bus row
+- DRV2605L SDA -> SDA bus row
+- DRV2605L SCL -> SCL bus row
+- SSD1306 SDA -> SDA bus row
+- SSD1306 SCL -> SCL bus row
+- (Only add 4.7k pull-ups on SDA and SCL to 3V3 if none of your breakouts already have them)
+
+RTC ALARM INTERRUPT:
+- DS3231 SQW/INT -> XIAO D0
+
+BUTTONS (switch to ground, INPUT_PULLUP in software):
+- MODE button: one leg -> XIAO D1, other leg -> GND
+- UP button: one leg -> XIAO D2, other leg -> GND
+- DOWN button: one leg -> XIAO D3, other leg -> GND
+  
+LAYOUT TIP:
+- Run one continuous perfboard/breadboard strip each for 3V3, GND, SDA, SCL along the board length
+
+# Links 
+
+[XIAO](https://www.amazon.com/gp/product/B0B94JZ2YF/ref=ox_sc_act_title_8?smid=A1YP59NGBNBZUR&th=1)
+
+[Haptic Motor Driver](https://www.amazon.com/gp/product/B083G1MCYZ/ref=ox_sc_act_title_7?smid=A2KRDQ1AI5Y5G6&psc=1)
+
+[Vibration Motors](https://www.amazon.com/gp/product/B0B4SK8M1C/ref=ox_sc_act_title_6?smid=A2L2YSK9NV3SSU&th=1)
+
+[OLED Display](https://www.amazon.com/gp/product/B0GBWXTR1Z/ref=ox_sc_act_title_5?smid=A3CX4TQNUXMB0L&th=1)
+
+[200mAh Lipo Battery](https://www.amazon.com/gp/product/B0CKRC99K6/ref=ox_sc_act_title_4?smid=A39OKXP5I8EI3U&psc=1)
+
+[Electrical Male and Female Connector](https://www.amazon.com/gp/product/B07FP2FCYC/ref=ox_sc_act_title_3?smid=ASGOPLX5TLJL1&th=1)
+
+[DS3231 RTC](https://www.amazon.com/gp/product/B09KPC8JZQ/ref=ox_sc_act_title_2?smid=A2Z10KY0342329&th=1)
+
+[4.7K Ω Resistor](https://www.amazon.com/gp/product/B0BR8MYNNC/ref=ox_sc_act_title_1?smid=A2XLLJ8HYD6SMA&th=1)
+
