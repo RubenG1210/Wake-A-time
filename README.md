@@ -92,6 +92,7 @@ LAYOUT TIP:
 
 Please keep into accountability that this is a project in process, I yet do not have any code, Although with this current list, I will adapt and slowly build the code to be able to have a finished code.
 
+
 # Links 
 
 [XIAO](https://www.amazon.com/gp/product/B0B94JZ2YF/ref=ox_sc_act_title_8?smid=A1YP59NGBNBZUR&th=1)
