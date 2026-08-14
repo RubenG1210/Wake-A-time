@@ -62,7 +62,7 @@ This brings up back to the BOM
 
 - 3 Tactile Buttons, (I already have these)
 
-# Total Cost x Shipping x Taxes = $80-90 depending on price fluctuations and shipping.
+# Total Cost x Shipping x Taxes = $71 depending on price fluctuations and shipping.
 
 # Wiring 
 
